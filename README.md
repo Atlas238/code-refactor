@@ -5,4 +5,4 @@
 
 * Main outside resources consulted were W3 Schools Sematic HTML table found here : http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf
 
-Screenshot should be found here !url()
+* Screenshot should be found here !url()
