@@ -12,7 +12,12 @@ Main outside resource consulted was W3 Schools Sematic HTML table found here : h
 
 Github deployed link can be found here : 
 
-#### Attatching a portrait and landscape screenshot to capture the full page
+#### Attatching multiple screenshots to show the full page
 
 ![Screenshot of Webpage](/assets/images/Horiseon-screenshot.PNG)
-![Screenshot of Landscape Webpage](/assets/images/Horiseon-screenshot-landscape.png)
+
+![Screenshot of Landscape Webpage](/assets/images/horiseon-screenshot-landscape-top.png)
+
+![Screenshot of Landscape Webpage2](/assets/images/horiseon-screenshot-landscape-mid.png)
+
+![Screenshot of Landscape Webpage3](/assets/images/horiseon-screenshot-landscape-footer.png)
