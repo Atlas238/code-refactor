@@ -10,7 +10,7 @@ CSS comments can be found directly on the style sheet detailing what specific ru
 
 Main outside resource consulted was W3 Schools Sematic HTML table found here : http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf
 
-Github deployed link can be found here : 
+Github deployed link can be found here : https://github.com/Atlas238/code-refactor
 
 #### Attatching multiple screenshots to show the full page
 
