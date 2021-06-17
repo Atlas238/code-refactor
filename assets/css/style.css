@@ -1,62 +1,75 @@
+/* First Universal Selector is acting as a simplified reset clearing all items padding and margin and setting the layout to border-box, this also designates the pages font-family for all things but the footer and the font color. Also including font-size here, as it will edit all those that are not otherwise designated such as the h3 tags in our later section elements and the h2 tag in our footer for example. */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
 }
 
+/* Giving our page a solid background */
 body {
     background-color: #d9dcd6;
 }
 
+/* Changing our links appearence to white and with no purple underline */
 a {
-    color: #ffffff;
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
-
+/* Details the header asthetics, giving it padding for adequate readability, changing the background of the header specifically to a blue */
 header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
 }
 
+/* Our header and footer use the same font-family, so they are both designated here to reduce repetition */
+header,
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Editing just the h1 content (Horiseon) so that our special colored span can be displayed inline, enlarging the font-size */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* Applying specifically to our navbar which contains our page links, padding-top gives us space within the box, margin-right gives us space outside the box and our float allows the entire nav class to sit to the right of our header h1 */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
+/* Converts our links (contained by li) from being listed vertically to inline elements, list-style-type removes our bullet points */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
     list-style-type:none;
 }
 
+/* Sets the maximum height and width of our images to 200px (note that this only applies to the smaller images as our main image is influenced by our .hero class */
 img {
     max-height: 200px;
 }
 
+/* Sets our main box to only take up 75% of it's parent element which in this case refers to our body or the whole page, changes the dispay to inline-block so we can let our aside slide up and to the right, taking up that remaining 25% of the body element. Finally adds 20px of margin on our left side for spacing */
 main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* Only used to change the color of the letters seo in Horiseon, left the font-size attribute in here to force this text to match the above header h1 */
 .seo {
     color: #d9dcd6;
+    font-size:48px;
 }
 
+/* This rule formats our main image encased in our figure tag, by using a background-image attribute this particular image is not effected by our previous img element rules */
 .hero {
     height: 800px;
     width: 100%;
@@ -66,6 +79,7 @@ main {
     background-position: center;
 }
 
+/* These floats are tied to the photos in each of our content sections, allows text to appear to the opposite side of the floated image. */
 .float-left {
     float: left;
     margin-right: 25px;
@@ -76,6 +90,7 @@ main {
     margin-left: 25px;
 }
 
+/* This class represents our aside, by having it float right it is allowed to slide up next to our main element. By setting height to 100% we ensure that the sidebar takes up the full height of the section content as they are both contained in our main box */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -83,45 +98,45 @@ main {
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
 
+/* Initially these rules dictating spacing for our aside content were writted in three separate rules, they were condensed for clarity */
 .benefit-lead , .benefit-brand , .benefit-cost {
     margin-bottom: 32px;
-    color: #ffffff;
 }
 
+/* These rules apply specifically to the headers for these aside items, centering them and providing a slight amount of margin before our text begins */
 .benefit-lead h3 , .benefit-brand h3 , .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* This rule applies directly to the three icons in our aside */
 .benefit-lead img , .benefit-brand img , .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/* These three classes represent our main section content (section tags in our HTML file) - Removed font-size as it was previously determined in our * rule */
 .search-engine-optimization , .online-reputation-management , .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
-    color: #ffffff;
-    font-size: 16px; 
 }
 
+/* Condensed three selectors into one rule, giving each of our main content sections headers a specified size and spacing */
 .search-engine-optimization h2 , .online-reputation-management h2 , .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* Final styling for our footer, providing spacing and centering, our footer h2 rule simply changes the font-size of our "made by" line, leaving the p tag content to be the standard previously set. */
 footer {
     padding: 30px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
