@@ -8,4 +8,4 @@
 
 * Main outside resource consulted was W3 Schools Sematic HTML table found here : http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf
 
-* Screenshot should be found here !
+* Screenshot should be found here ![Screenshot of Webpage](/assets/images/Horiseon-screenshot.PNG)
